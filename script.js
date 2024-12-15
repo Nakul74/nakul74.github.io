@@ -48,3 +48,12 @@ document.querySelectorAll('.expander').forEach(button => {
     }
   });
 });
+
+var typed = new Typed('#typed-text', {
+  strings: ["AI Engineer", "LLM Engineer", "Data Scientist", "MLOps Engineer"],
+  typeSpeed: 100,
+  backSpeed: 50,
+  loop: true,
+  loopCount: Infinity,
+  startDelay: 2000, // Adjust as needed
+});

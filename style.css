@@ -512,6 +512,95 @@ section .button button:hover{
   color: #007BFF;
 }
 
+/* Section styling */
+.why-hire-me {
+  background-color: #ffffff;
+  padding: 60px 0; /* Removed side padding */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0; /* Removes default margin */
+  border-radius: 0; /* No border radius for full-width layout */
+  width: 100%; /* Takes full page width */
+}
+
+.why-hire-me .title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.why-hire-me .title span {
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 5px;
+}
+
+.why-hire-me .why-hire-details {
+  padding: 0; /* Removed padding */
+}
+
+/* If using a container for content */
+.why-hire-me .why-hire-details .container {
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  width: 95%; /* Adjust for spacing */
+}
+
+.why-hire-me .why-hire-details .text p {
+  font-size: 18px;
+  color: #555555;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.why-hire-me .why-hire-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-hire-me .why-hire-details ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.why-hire-me .why-hire-details ul li .label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #3498db;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.why-hire-me .why-hire-details ul li span {
+  margin-bottom: 5px;
+}
+
+.why-hire-me .why-hire-details ul li {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .why-hire-me .why-hire-details {
+    padding: 0 5%; /* Adjust padding for smaller screens */
+  }
+
+  .why-hire-me .title {
+    font-size: 24px;
+  }
+
+  .why-hire-me .why-hire-details .text p {
+    font-size: 16px;
+  }
+
+  .why-hire-me .why-hire-details ul li {
+    font-size: 15px;
+  }
+}
 
 /* Footer CSS */
 footer{
