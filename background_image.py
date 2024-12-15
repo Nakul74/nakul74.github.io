@@ -1,11 +1,8 @@
-import cv2
-arr = cv2.imread('images/background.png')
-print(arr.shape)
-
 from PIL import Image
+from pathlib import Path
 
 # Open your original image
-original_image = Image.open('images/Nakul_Chamariya.jpeg')
+original_image = Image.open(Path('images','Nakul_Chamariya.jpeg'))
 
 # Dimensions for the new image
 new_width, new_height = 3500, 5000
@@ -31,4 +28,4 @@ x = max(x, padding_width)
 new_image.paste(original_image, (x, y))
 
 # Save the result
-new_image.save('images/background.jpg')
+new_image.save(Path('images','background.jpg'))
